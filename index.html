@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+        
+    <script src="ajax.js"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row mt-4 p-4">
+            <div class="col">
+                <form id='input-form'>
+                    <div class="form-group">
+                        <label>Send Message Anonymously : </label>
+                        
+                        <textarea id="inp" type="text" class="form-control" name="temp_entry" placeholder="type your text here ..." rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-sm btn-primary" type="submit" id='submit-form'>Send</button>
+                    
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="row mt-3 p-4">
+            <div class="col">
+                <iframe id = "results" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWzECYLMGyiqEHCxh0Q9pXiZb8j0zfuSJPy1R_UJRtXiDQeyPL3uSXpWjPpLhDvkAh96-Ur_HuJH4f/pubhtml?widget=false&amp;chrome=false&amp;headers=false" style="width: 100%;height:300px;border: 1px solid black;"></iframe>
+
+            </div>
+        </div>
+
+        <div class="row mt-3 text-center" style="background-color: rgba(0,0,0,0.2);">
+            <div class="col">
+                Created by RV
+            </div>
+        </div>
+        <div class="text-center" id="successbox" style="display: none;">
+            <div class="alert" style="display: inline-block;padding: 12px;background-color: #099b2ed8;color: white;top:30%;left:30%;position: fixed;">
+                <i class="fa fa-check" aria-hidden="true"></i> Sent Succefully.
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
